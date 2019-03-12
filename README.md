@@ -1,4 +1,4 @@
-# cityzen
+# TOYR - Toy WebShop
 Proiect la TW
 
 # Echipa
