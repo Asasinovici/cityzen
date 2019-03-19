@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/style.css"/>
+
+    <style>
+        /*Comment*/
+        .test1 {
+            background-color: gray; /*the margin can't be colored*/
+            /*text-align: center;*/
+        }
+
+        /*.test2 {
+            margin-top: 15px; margin ignores the other margins
+            margin-top: 25px;
+        }
+        */
+
+        .form-style {
+            margin-left : 20%;
+            margin-right : 20%;
+            padding-left: 10%; 
+            background-color: darkgray;
+            border: 2px solid gray;
+            border-radius: 10px;
+            border-style:ridge;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            padding: 15px 15px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- This is how you write comments -->
+    <div class="g_container">
+
+        <!-- The place for the navbar -->
+        <nav class="g_row navbar test1">
+            <h1>The nav bar, under development</h1>
+        </nav>
+
+        <!-- Some tests
+        <div class="g_row">
+            <div class="g_col-4 g_col-md-12 test1 test2">
+                test
+            </div>
+            <div class="g_col-4 g_col-md-6 test1 test2">
+                test 1
+            </div>
+            <div class="g_col-4 g_col-md-6 test1 test2">
+                test 2
+            </div>
+        </div>
+        -->
+
+        <!-- The backbone of login view -->
+        <a class="navbar navitem navlinks g_row g_col-12" href="index.html"> Autentificare </a>
+
+        <div class="g_row form-style">
+
+            <form class="g_col-12">
+                <div class="g_col-12">
+                    <label for="email" >E-mail:</label>
+                </div>
+                <div class="g_col-12">
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="g_col-12">
+                    <label for="password">Parola:</label>
+                </div>
+                <div class="g_col-12">
+                    <input type="password" id="password" name="passward">
+                </div>
+
+                <div class="g_col-12">
+                    <label for="radio_input" class="g_col-md-4">Tine-ma minte! </label>
+                    <input type="radio" id="radio_input" name="remember" class="g_col-md-4">
+                </div>
+
+                <div class="g_col-12">
+                    <button type="submit">Autentificare</button>
+                </div>
+                <div class="g_col-12">
+                    <a href="login.html">Recupereaza parola.</a>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
