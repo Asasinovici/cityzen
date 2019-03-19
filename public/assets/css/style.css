@@ -523,3 +523,26 @@ a:hover {
     box-shadow       : 0 5px 25px rgba(0, 0, 0, 0.3);
     transition       : border 150ms ease, transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
 }
+
+.form-style {
+    margin-left : 20%;
+    margin-right : 20%;
+    padding-left: 10%;
+    background-color: darkgray;
+    border: 2px solid gray;
+    border-radius: 10px;
+    border-style:ridge;
+    background-color: gray;
+}
+
+.form_element {
+    display: block;
+    padding-top: 10px;
+}
+
+.r_button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+}
