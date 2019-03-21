@@ -77,6 +77,12 @@ START grid system
     flex-wrap : wrap;
 }
 
+g_column_direction {
+    display         : flex;
+    flex-wrap       : wrap;
+    flex-direction  : column;
+}
+
 .g_col {
     flex-basis : 0;
     flex-grow  : 1;
@@ -645,6 +651,26 @@ ul.products-list li.product-item .product-wrapper .test {
 
 .inline_display {
     display : inline;
+}
+
+div.admin_box {
+    background    : #00AEEF;
+    border-radius : 3px;
+    padding       : 5px;
+    color         : white;
+    font-size     : 20px;
+    margin        : 0px;
+
+}
+
+.nav_admin {
+    min-height: 95vh;
+    background: white;
+}
+
+.command_admin {
+    min-height: 95vh;
+    background: #EEEEEE;
 }
 
 @media (max-width : 768px) {
