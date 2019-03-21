@@ -490,18 +490,28 @@ a:hover {
 }
 
 footer {
-    background : #00AEEF;
-    color      : #FFFFFF;
-    padding    : 15px;
+    background : #FFFFFF;
+    color      : #666666;
+    padding    : 25px;
+    display    : flex;
+    flex       : 1;
+    margin-top : 15px;
 }
 
 footer a {
-    color           : #FFFFFF;
     text-decoration : underline;
 }
 
+hr {
+    border     : none;
+    border-top : 3px dashed #F2F2F2;
+    padding    : 0;
+    width      : 100%;
+    margin     : 15px 0;
+    background : #FFFFFF;
+}
+
 .navbar {
-    margin-top    : 15px;
     margin-bottom : 15px;
     font-family   : 'Kalam', cursive;
     font-size     : 18px;
@@ -542,13 +552,82 @@ footer a {
 
 .navbar .navlinks .navitem:hover {
     border           : 3px solid #0073EF;
-    background-color : #EEEEEE;
+    background-color : #FFFFFF;
     border-radius    : 15px;
     transform        : rotate(3deg);
     box-shadow       : 0 5px 25px rgba(0, 0, 0, 0.3);
     transition       : border 150ms ease, transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
 }
 
+.second-navbar {
+    border-bottom : 3px dashed #DDDDDD;
+}
+
+.second-navbar .categ-button {
+    text-decoration : none;
+    background      : #00A651;
+    color           : #FFFFFF;
+    font-size       : 18px;
+    font-weight     : bold;
+    height          : 46px;
+    line-height     : 40px;
+    padding         : 0 15px;
+    display         : block;
+    border          : 3px solid #007236;
+    transition      : background 150ms ease;
+}
+
+.second-navbar .categ-button:hover {
+    background : #007236;
+    transition : background 150ms ease;
+}
+
+.second-navbar .search-container {
+    display         : flex;
+    flex            : 1;
+    justify-content : center;
+    align-items     : center;
+}
+
+.second-navbar .search-container .search-input {
+    border        : 3px solid #00AEEF;
+    border-radius : 23px 0 0 23px;
+    outline       : none;
+    height        : 40px;
+    padding       : 0 15px;
+    flex          : 1;
+    font-size     : 16px;
+    box-shadow    : none;
+    transition    : box-shadow 150ms ease, border 150ms ease;
+}
+
+.second-navbar .search-container .search-input:focus {
+    border     : 3px solid #0073EF;
+    box-shadow : inset 0 0 0 3px #0073EF;
+    transition : box-shadow 150ms ease, border 150ms ease;
+}
+
+.second-navbar .search-container .search-button {
+    background    : #00AEEF;
+    border        : none;
+    outline       : none;
+    height        : 46px;
+    padding       : 5px 20px 5px 15px;
+    border-radius : 0 23px 23px 0;
+    cursor        : pointer;
+    color         : #FFFFFF;
+    font-size     : 16px;
+    font-weight   : bold;
+    transition    : background-color 150ms ease;
+}
+
+.second-navbar .search-container .search-button:hover {
+    background : #0073EF;
+    transition : background-color 150ms ease;
+}
+
+nav.box,
+main.box,
 div.box {
     background    : #FFFFFF;
     border-radius : 3px;
@@ -556,13 +635,12 @@ div.box {
 }
 
 div.box h3.box-title, label.box-title {
-    font-family   : 'Kalam', cursive;
-    border-bottom : 1px solid #EEEEEE;
-    font-size     : 24px;
-    font-weight   : bold;
-    color         : #00AEEF;
-    line-height   : 18px;
-    padding       : 5px;
+    font-family : 'Kalam', cursive;
+    font-size   : 24px;
+    font-weight : bold;
+    color       : #00AEEF;
+    line-height : 18px;
+    padding     : 10px 0 0 15px;
 }
 
 div.box div.box-content input {
@@ -572,31 +650,34 @@ div.box div.box-content input {
 }
 
 div.box div.box-content {
-    padding-top : 10px;
+    padding-top : 5px;
 }
 
 ul.products-list {
-
 }
 
 ul.products-list li.product-item {
-    padding : 5px;
+    padding : 1px;
+    z-index : 1;
+}
+ul.products-list li.product-item:hover {
+    z-index : 2;
 }
 
 ul.products-list li.product-item .product-wrapper {
-    display       : block;
-    border        : 1px solid #EEEEEE;
-    border-radius : 3px;
-    padding       : 10px;
-    transform     : translateY(0);
-    box-shadow    : none;
-    transition    : transform 150ms ease, box-shadow 150ms ease;
+    background : #FFFFFF;
+    display    : block;
+    border     : 5px solid #CCCCCC;
+    padding    : 10px;
+    transform  : translateY(0) scale(1);
+    box-shadow : none;
+    transition : transform 150ms ease, border 150ms ease;
 }
 
 ul.products-list li.product-item .product-wrapper:hover {
-    transform  : translateY(-5px);
-    box-shadow : 0 5px 15px #DDDDDD;
-    transition : transform 150ms ease, box-shadow 150ms ease;
+    transform  : translateY(0) scale(1.1);
+    border     : 5px solid #00AEEF;
+    transition : transform 150ms ease, border 150ms ease;
 }
 
 ul.products-list li.product-item .product-wrapper img.product-image {
