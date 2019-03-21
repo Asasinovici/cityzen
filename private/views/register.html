@@ -11,68 +11,84 @@
     <div class="g_container">
         <!-- The place for the navbar -->
         <nav class="g_row navbar">
-            <h1>The nav bar, under development</h1>
+            <a class="g_col-12 g_col-sm-3 logo-container" href="index.html">
+                <img src="../../public/assets/img/logo.png" alt="TOYR" class="logo"/>
+            </a>
+            <div class="g_col-12 g_col-sm-9 navlinks">
+                <a class="navitem" href="register.html">
+                    Inregistrare
+                </a>
+                <a class="navitem" href="login.html">
+                    Autentificare
+                </a>
+            </div>
         </nav>
 
         <!-- The place for the h1 -->
 
         <div class="g_row form-style">
             <form class="g_col-12">
-                <div class="form_element">
-                    <label for="prenume">Prenume*:</label>
-                </div>
-                <div class="form_element">
-                    <input type="text" id="prenume" name="prenume">
+
+                <div class="box">
+                    <label for="prenume" class="box-title">Prenume*:</label>
+                    <div class="box-content">
+                        <input type="text" id="prenume" name="prenume">
+                    </div>
                 </div>
 
-                <div class="form_element">
-                    <label for="nume">Nume*:</label>
-                </div>
-                <div class="form_element">
-                    <input type="text" id="nume" name="nume">
-                </div>
-
-                <div class="form_element">
-                    <label for="telefon">Telefon*</label>
-                </div>
-                <div class="form_element">
-                    <input type="tel" id="telefon" name="telefon">
+                <div class="box">
+                        <label for="nume" class="box-title">Nume*:</label>
+                    <div class="box-content">
+                        <input type="text" id="nume" name="nume">
+                    </div>
                 </div>
 
-                <div class="form_element">
-                    <label for="email">Email*:</label>
-                </div>
-                <div class="form_element">
-                    <input type="email" id="email" name="email">
-                </div>
-
-                <div class="form_element">
-                    <label for="pwd1">Parola*:</label>
-                </div>
-                <div class="form_element">
-                    <input type="password" id="pwd1" name="pwd1">
+                <div class="box">
+                        <label for="telefon" class="box-title">Telefon*</label>
+                    <div class="box-content">
+                        <input type="tel" id="telefon" name="telefon">
+                    </div>
                 </div>
 
-                <div class="form_element">
-                    <label for="pwd2">Reintroduceti parola*:</label>
-                </div>
-                <div class="form_element">
-                    <input type="password" id="pwd2" name="pwd2">
-                </div>
-
-                <div class="form_element">
-                    <p>Campurile marcate cu * sunt obligatorii.</p>
+                <div class="box">
+                        <label for="email" class="box-title">Email*:</label>
+                    <div class="box-content">
+                        <input type="email" id="email" name="email">
+                    </div>
                 </div>
 
-                <div class="form_element">
-                    <input type="checkbox" checked="checked" class="inline_display">
-                    <p class="inline_display">Doresc sa primesc email-uri cu noutatile si campaniile realizate de TOYR.</p>
+                <div class="box">
+                        <label for="pwd1" class="box-title">Parola*:</label>
+                    <div class="box-content">
+                        <input type="password" id="pwd1" name="pwd1">
+                    </div>
                 </div>
 
-                <div class="form_element">
-                    <button type="submit" class="r_button">Creeaza cont</button>
+                <div class="box">
+                        <label for="pwd2" class="box-title">Reintroduceti parola*:</label>
+                    <div class="box-content">
+                        <input type="password" id="pwd2" name="pwd2">
+                    </div>
                 </div>
 
+                <div class="box">
+                    <div class="box-content">
+                        <p>Campurile marcate cu * sunt obligatorii.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-title">
+                        <input type="checkbox" checked="checked" class="inline_display">
+                        <p class="inline_display">Doresc sa primesc email-uri cu noutatile si campaniile realizate de TOYR.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content">
+                        <button type="submit" class="r_button">Creeaza cont</button>
+                    </div>
+                </div>
 
             </form>
         </div>

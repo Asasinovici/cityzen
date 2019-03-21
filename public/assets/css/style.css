@@ -555,7 +555,7 @@ div.box {
     padding       : 10px;
 }
 
-div.box h3.box-title {
+div.box h3.box-title, label.box-title {
     font-family   : 'Kalam', cursive;
     border-bottom : 1px solid #EEEEEE;
     font-size     : 24px;
@@ -563,6 +563,12 @@ div.box h3.box-title {
     color         : #00AEEF;
     line-height   : 18px;
     padding       : 5px;
+}
+
+div.box div.box-content input {
+    border        : 2px solid #0073EF;
+    border-radius : 3px;
+    /*don't know how to change the dimensions :(*/
 }
 
 div.box div.box-content {
@@ -628,22 +634,6 @@ ul.products-list li.product-item .product-wrapper .product-data .product-buttons
 
 ul.products-list li.product-item .product-wrapper .test {
     display : block;
-}
-
-.form-style {
-    margin-left      : 20%;
-    margin-right     : 20%;
-    padding-left     : 10%;
-    background-color : darkgray;
-    border           : 2px solid gray;
-    border-radius    : 10px;
-    border-style     : ridge;
-    background-color : gray;
-}
-
-.form_element {
-    display     : block;
-    padding-top : 10px;
 }
 
 .r_button {

@@ -13,39 +13,54 @@
 
         <!-- The place for the navbar -->
         <nav class="g_row navbar">
-            <h1>The nav bar, under development</h1>
+            <a class="g_col-12 g_col-sm-3 logo-container" href="index.html">
+                <img src="../../public/assets/img/logo.png" alt="TOYR" class="logo"/>
+            </a>
+            <div class="g_col-12 g_col-sm-9 navlinks">
+                <a class="navitem" href="register.html">
+                    Inregistrare
+                </a>
+                <a class="navitem" href="login.html">
+                    Autentificare
+                </a>
+            </div>
         </nav>
 
         <!-- The backbone of login view -->
-        <a class="navbar navitem navlinks g_row g_col-12" href="index.html"> Autentificare </a>
-
-        <div class="g_row form-style">
+        <div class="g_row">
 
             <form class="g_col-12">
-                <div class="form_element">
-                    <label for="email" >E-mail:</label>
-                </div>
-                <div class="form_element">
-                    <input type="email" id="email" name="email">
-                </div>
-
-                <div class="form_element">
-                    <label for="password">Parola:</label>
-                </div>
-                <div class="form_element">
-                    <input type="password" id="password" name="passward">
+                <div class="box">
+                        <label for="email" class="box-title">E-mail:</label>
+                    <div class="box-content">
+                        <input type="email" id="email" name="email">
+                    </div>
                 </div>
 
-                <div class="form_element">
-                    <label for="checkbox_input" class="g_col-md-4">Tine-ma minte! </label>
-                    <input type="checkbox" id="checkbox_input" name="remember" class="g_col-md-4">
+                <div class="box">
+                        <label for="password" class="box-title">Parola:</label>
+                    <div class="box-content">
+                        <input type="password" id="password" name="passward">
+                    </div>
                 </div>
 
-                <div class="form_element">
-                    <button type="submit" class="r_button">Autentificare</button>
+                <div class="box">
+                    <div class="box-title">
+                        <label for="checkbox_input" class="box-title">Tine-ma minte! </label>
+                        <input type="checkbox" id="checkbox_input" name="remember">
+                    </div>
                 </div>
-                <div class="form_element">
-                    <a href="login.html">Recupereaza parola.</a>
+
+                <div class="box">
+                    <div class="box-content">
+                        <button type="submit" class="r_button">Autentificare</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <a href="login.html">
+                        <h3 class="box-title">Recupereaza parola.</h3>
+                    </a>
                 </div>
 
             </form>
