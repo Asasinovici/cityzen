@@ -709,6 +709,7 @@ ul.products-list li.product-item .product-wrapper .test {
     border           : none;
     padding          : 15px 15px;
     text-align       : center;
+    border-radius    : 3px;
 }
 
 .inline_display {
@@ -730,9 +731,32 @@ div.admin_box {
     background : white;
 }
 
+.nav_admin_a {
+    display: block;
+    border-bottom: 1px solid #00AEEF;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
 .command_admin {
     min-height : 95vh;
     background : #EEEEEE;
+    padding-left: 2em;
+}
+
+.select_style {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #00AEEF;
+    border: transparent;
+    font-family: 'Kalam', cursive;
+    font-size: 16px;
+    width: 40%;
+}
+
+.form_style {
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .product-page {
