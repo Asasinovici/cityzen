@@ -2,11 +2,6 @@
 BEGIN CSS reset
  */
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -77,7 +72,7 @@ START grid system
     flex-wrap : wrap;
 }
 
-g_column_direction {
+.g_column_direction {
     display        : flex;
     flex-wrap      : wrap;
     flex-direction : column;
@@ -637,7 +632,7 @@ div.box h3.box-title, label.box-title {
     font-weight : bold;
     color       : #00AEEF;
     line-height : 18px;
-    padding     : 10px 0 0 15px;
+    padding     : 10px 0 5px 0;
 }
 
 div.box div.box-content input {
@@ -721,7 +716,7 @@ div.admin_box {
     padding       : 5px;
     color         : white;
     font-size     : 20px;
-    margin        : 0px;
+    margin        : 0;
 
 }
 
@@ -744,7 +739,6 @@ div.admin_box {
 }
 
 .product-page .product-preview .product-main_image_container {
-    height          : 500px;
     border          : 5px solid #DDDDDD;
     background      : #F2F2F2;
     display         : flex;
@@ -755,8 +749,7 @@ div.admin_box {
 
 .product-page .product-preview .product-image {
     display    : block;
-    max-width  : 100%;
-    width      : auto;
+    width      : 100%;
     height     : auto;
     max-height : 100%;
 }
@@ -772,8 +765,6 @@ div.admin_box {
 }
 
 .product-page .product-preview .product-other_images .product-image_small_container {
-    width           : 100px;
-    height          : 100px;
     border          : 3px solid #00AEEF;
     margin-right    : 5px;
     background      : #F2F2F2;
