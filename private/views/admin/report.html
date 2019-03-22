@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../public/assets/css/style.css"/>
+</head>
+<body>
+<div class="g_container">
+    <div class="g_row admin_box">
+        <div class="g_col-6 g_col-md-6">
+            <h2>TOYR ADMIN</h2>
+        </div>
+        <div class="g_col-6 g_col-md-6">
+            <h2 style="text-align: right">LOGOUT</h2>
+        </div>
+    </div>
+
+    <div class="g_row">
+        <div class="g_col-2 nav_admin">
+            <a href="addProduct.html" class="nav_admin_a">Adauga produs</a>
+            <a href="index.html" class="nav_admin_a">Cauta produs</a>
+            <a href="index.html" class="nav_admin_a">Introduce oferta</a>
+            <a href="index.html" class="nav_admin_a">Sterge produs</a>
+            <a href="index.html" class="nav_admin_a">Verificare client</a>
+            <a href="report.html" class="nav_admin_a">Generare rapoarte</a>
+
+        </div>
+
+        <div class="g_col-10 command_admin">
+            <div>
+                <!-- The div that will have all the select tags-->
+                <select class="select_style">
+                    <option value="0">Selecteaza tipul raportului:</option>
+                    <option value="1">Utilizatori</option>
+                    <option value="2">Cheltuieli</option>
+                    <option value="3">Baza legala</option>
+                    <option value="4">Activitate</option>
+                    <option value="5">Alceva</option>
+                </select>
+
+                <form class="form_style">
+                    Inceputul perioadei:
+                    <input type="date">
+
+                    Sfarsitul perioadei:
+                    <input type="date">
+                </form>
+
+                <select  class="select_style">
+                    <option value="0">Selecteaza autoritatea:</option>
+                    <option value="1">Angajat</option>
+                    <option value="2">Manager</option>
+                    <option value="3">Detinator</option>
+                </select>
+            </div>
+
+            <div>
+                <!-- The div with the buttons that generate a action using the values from select tags-->
+                <button class="r_button">PDF</button>
+                <button class="r_button">XML</button>
+                <button class="r_button">TEXT</button>
+                <button class="r_button">JSON</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

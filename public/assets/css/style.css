@@ -626,13 +626,22 @@ div.box {
     padding       : 10px;
 }
 
-div.box h3.box-title, label.box-title {
+div.box h3.box-title {
     font-family : 'Kalam', cursive;
     font-size   : 24px;
     font-weight : bold;
     color       : #00AEEF;
     line-height : 18px;
     padding     : 10px 0 5px 0;
+}
+
+div.box label.box-title {
+    font-family : 'Kalam', cursive;
+    font-size   : 16px;
+    font-weight : bold;
+    color       : #00AEEF;
+    line-height : 20px;
+    padding     : 10px 0 0 15px;
 }
 
 div.box div.box-content input {
@@ -704,6 +713,7 @@ ul.products-list li.product-item .product-wrapper .test {
     border           : none;
     padding          : 15px 15px;
     text-align       : center;
+    border-radius    : 3px;
 }
 
 .inline_display {
@@ -725,9 +735,32 @@ div.admin_box {
     background : white;
 }
 
+.nav_admin_a {
+    display: block;
+    border-bottom: 1px solid #00AEEF;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
 .command_admin {
     min-height : 95vh;
     background : #EEEEEE;
+    padding-left: 2em;
+}
+
+.select_style {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #00AEEF;
+    border: transparent;
+    font-family: 'Kalam', cursive;
+    font-size: 16px;
+    width: 40%;
+}
+
+.form_style {
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .product-page {
@@ -927,6 +960,17 @@ START MEDIA QUERIES
         background : #0073EF;
         transition : background 150ms ease;
     }
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
 }
 
 /*
