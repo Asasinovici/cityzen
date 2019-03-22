@@ -631,12 +631,21 @@ div.box {
     padding       : 10px;
 }
 
-div.box h3.box-title, label.box-title {
+div.box h3.box-title {
     font-family : 'Kalam', cursive;
     font-size   : 24px;
     font-weight : bold;
     color       : #00AEEF;
     line-height : 18px;
+    padding     : 10px 0 0 15px;
+}
+
+div.box label.box-title {
+    font-family : 'Kalam', cursive;
+    font-size   : 16px;
+    font-weight : bold;
+    color       : #00AEEF;
+    line-height : 20px;
     padding     : 10px 0 0 15px;
 }
 
@@ -960,6 +969,17 @@ START MEDIA QUERIES
         background : #0073EF;
         transition : background 150ms ease;
     }
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
 }
 
 /*
