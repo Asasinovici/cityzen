@@ -574,6 +574,37 @@ hr {
     transition : background 150ms ease;
 }
 
+.second-navbar .categ-container {
+    position : relative;
+}
+
+.second-navbar .categ-container ul.categ-list {
+    display    : none;
+    position   : absolute;
+    top        : 48px;
+    left       : 5px;
+    width      : 270px;
+    border     : 3px solid #007236;
+    background : #FFFFFF;
+    z-index    : 999;
+}
+
+.second-navbar .categ-container ul.categ-list li.categ-name {
+    display       : block;
+    padding       : 10px 15px;
+    color         : #007236;
+    border-bottom : 1px dashed #007236;
+    cursor        : pointer;
+}
+
+.second-navbar .categ-container ul.categ-list li.categ-name:hover {
+    background : rgba(0, 115, 54, 0.2);
+}
+
+.second-navbar .categ-container ul.categ-list li.categ-name:last-of-type {
+    border-bottom : none;
+}
+
 .second-navbar .search-container {
     display         : flex;
     flex            : 1;
@@ -652,6 +683,43 @@ div.box div.box-content input {
 
 div.box div.box-content {
     padding-top : 5px;
+}
+
+.event-container {
+    border              : 5px solid #FF6666;
+    background-color    : #FFFFFF;
+    padding             : 0;
+    margin-bottom       : 15px;
+    position            : relative;
+    height              : 160px;
+    background-position : center center;
+    background-repeat   : no-repeat;
+    background-size     : cover;
+}
+
+.event-container .event-overlay {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    width      : 100%;
+    height     : 100%;
+    background : rgba(100, 10, 10, 0.5);
+    padding    : 25px;
+    overflow   : hidden;
+}
+
+.event-container .event-overlay .event-name {
+    color       : #FFFFFF;
+    font-size   : 48px;
+    font-family : 'Kalam', cursive;
+    font-weight : bold;
+}
+
+.event-container .event-overlay .event-description {
+    color       : #FFFFFF;
+    font-family : 'Kalam', cursive;
+    font-size   : 24px;
+    padding-top : 10px;
 }
 
 ul.products-list {
@@ -1095,6 +1163,10 @@ START MEDIA QUERIES
     ul.products-list li.product-item .product-wrapper .product-data .product-buttons .product-button:hover {
         background : #0073EF;
         transition : background 150ms ease;
+    }
+
+    .second-navbar .categ-container:hover > ul.categ-list {
+        display : block;
     }
 }
 
