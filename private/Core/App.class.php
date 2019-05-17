@@ -44,7 +44,27 @@ class App
                 'error' => 'Wrong HTTP method!'
             ]);
         }
+        $handler = explode('@', $this->routes[$route]['handler']);
+        $controllerFileName = $handler[0];
+        $function = $handler[1];
+        if (!file_exists($_SERVER['DOCUMENT_ROOT'] . '/../private/Controllers/' . $controllerFileName . '.class.php')) {
+            return new View('global/error.php', [
+                'error' => 'Controller does not exist!'
+            ]);
+        }
 
-        return new View('global/test.php', ['test' => 'this is working']);
+        require_once($_SERVER['DOCUMENT_ROOT'] . '/../private/Controllers/' . $controllerFileName . '.class.php');
+
+        $controllerClass = '\\Controllers\\' . $controllerFileName;
+
+        $controller = new $controllerClass();
+
+        if (!method_exists($controller, $function) || !is_callable([$controller, $function])) {
+            return new View('global/error.php', [
+                'error' => 'Controller function cannot be called or doesnt exist!'
+            ]);
+        }
+
+        $controller->$function($request);
     }
 }
