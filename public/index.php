@@ -6,7 +6,6 @@ spl_autoload_register(function ($className) {
     include_once $_SERVER['DOCUMENT_ROOT'] . '/../private/' . $className . '.class.php';
 });
 
-
 use Core\App;
 
 $app = App::getInstance();
@@ -18,7 +17,7 @@ $app->setRoutes([
     ],
     '/' => [
         'method' => 'GET',
-        'handler' => 'TestController@pla'
+        'handler' => 'TestController@pls'
     ]
 ]);
 

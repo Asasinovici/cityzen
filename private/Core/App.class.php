@@ -47,13 +47,13 @@ class App
         $handler = explode('@', $this->routes[$route]['handler']);
         $controllerFileName = $handler[0];
         $function = $handler[1];
-        if (!file_exists($_SERVER['DOCUMENT_ROOT'] . '/../private/Controllers/' . $controllerFileName . '.class.php')) {
+        if (!file_exists(Config::getPrivatePath('Controllers/' . $controllerFileName . '.class.php'))) {
             return new View('global/error.php', [
                 'error' => 'Controller does not exist!'
             ]);
         }
 
-        require_once($_SERVER['DOCUMENT_ROOT'] . '/../private/Controllers/' . $controllerFileName . '.class.php');
+        require_once(Config::getPrivatePath('/Controllers/' . $controllerFileName . '.class.php'));
 
         $controllerClass = '\\Controllers\\' . $controllerFileName;
 
