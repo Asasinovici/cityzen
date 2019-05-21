@@ -8,13 +8,13 @@
 
     <link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../../public/assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
 <div class="g_container">
     <nav class="g_row navbar box">
         <a class="g_col-12 g_col-sm-3 g_col-lg-2 logo-container" href="index.html">
-            <img src="../../../public/assets/img/logo.png" alt="TOYR" class="logo"/>
+            <img src="assets/img/logo.png" alt="TOYR" class="logo"/>
         </a>
         <div class="g_col-12 g_col-sm-9 g_col-lg-10 navlinks">
             <a class="navitem" href="register.html">
@@ -30,7 +30,7 @@
 
     <main>
 
-        <div class="event-container" style="background-image: url('../../../public/assets/img/event.jpg')">
+        <div class="event-container" style="background-image: url('assets/img/event.jpg')">
             <div class="event-overlay">
                 <div class="event-name">
                     Ziua pinguinilor!
@@ -80,7 +80,7 @@
                             <li class="g_col-6 g_col-md-4 g_col-lg-3 product-item">
                                 <div class="product-wrapper">
                                     <a href="product.html">
-                                        <img src="../../../public/assets/img/products/prod_1.png"
+                                        <img src="assets/img/products/prod_1.png"
                                              alt="om lego"
                                              class="product-image"
                                         />
@@ -104,7 +104,7 @@
                             <li class="g_col-6 g_col-md-4 g_col-lg-3 product-item">
                                 <div class="product-wrapper">
                                     <a href="product.html">
-                                        <img src="../../../public/assets/img/products/prod_2.png"
+                                        <img src="assets/img/products/prod_2.png"
                                              alt="balaur teribil"
                                              class="product-image"
                                         />
@@ -127,7 +127,7 @@
                             <li class="g_col-6 g_col-md-4 g_col-lg-3 product-item">
                                 <div class="product-wrapper">
                                     <a href="product.html">
-                                        <img src="../../../public/assets/img/products/prod_3.png"
+                                        <img src="assets/img/products/prod_3.png"
                                              alt="dacia"
                                              class="product-image"
                                         />
@@ -150,7 +150,7 @@
                             <li class="g_col-6 g_col-md-4 g_col-lg-3 product-item">
                                 <div class="product-wrapper">
                                     <a href="product.html">
-                                        <img src="../../../public/assets/img/products/prod_1.png"
+                                        <img src="assets/img/products/prod_1.png"
                                              alt="om lego"
                                              class="product-image"
                                         />
@@ -186,7 +186,7 @@
                             <li class="g_col-6 g_col-md-4 g_col-lg-3 product-item">
                                 <div class="product-wrapper">
                                     <a href="index.html">
-                                        <img src="../../../public/assets/img/products/prod_1.png"
+                                        <img src="assets/img/products/prod_1.png"
                                              alt="om lego"
                                              class="product-image"
                                         />
@@ -210,7 +210,7 @@
                             <li class="g_col-6 g_col-md-4 g_col-lg-3 product-item">
                                 <div class="product-wrapper">
                                     <a href="index.html">
-                                        <img src="../../../public/assets/img/products/prod_3.png"
+                                        <img src="assets/img/products/prod_3.png"
                                              alt="dacia"
                                              class="product-image"
                                         />
@@ -234,7 +234,7 @@
                             <li class="g_col-6 g_col-md-4 g_col-lg-3 product-item">
                                 <div class="product-wrapper">
                                     <a href="index.html">
-                                        <img src="../../../public/assets/img/products/prod_1.png"
+                                        <img src="assets/img/products/prod_1.png"
                                              alt="om lego"
                                              class="product-image"
                                         />
@@ -258,7 +258,7 @@
                             <li class="g_col-6 g_col-md-4 g_col-lg-3 product-item">
                                 <div class="product-wrapper">
                                     <a href="index.html">
-                                        <img src="../../../public/assets/img/products/prod_2.png"
+                                        <img src="assets/img/products/prod_2.png"
                                              alt="balaur teribil"
                                              class="product-image"
                                         />

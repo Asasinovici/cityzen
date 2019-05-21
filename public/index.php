@@ -17,7 +17,7 @@ $app->setRoutes([
     ],
     '/' => [
         'method' => 'GET',
-        'handler' => 'TestController@pls'
+        'handler' => 'TestController@index'
     ]
 ]);
 
