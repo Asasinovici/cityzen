@@ -25,11 +25,19 @@ class Database extends PDO
         $this->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     }
 
-    public function runQuery($query)
+    public function runSelectQuery($query)
     {
         $sth = $this->prepare($query);
         $sth->execute();
         $result = $sth->fetchAll();
+
+        return $result;
+    }
+
+    public function runCUDQuery($query, $param=[])
+    {
+        $sth = $this->prepare($query);
+        $result = $sth->execute($param);
 
         return $result;
     }
